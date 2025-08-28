@@ -2,10 +2,12 @@ const Filme = require('../entidades/filme');
 
 let filmes = [];
 
+//procura pelo id
 function getFilmeById(id) {
   return filmes.find(f => f.getId() == id);
 }
 
+//procura filme pelo id e dps retorna
 function lerFilme (req, res){
   const idFilme = parseInt(req.params.id);
   const filme = getFilmeById(idFilme);
