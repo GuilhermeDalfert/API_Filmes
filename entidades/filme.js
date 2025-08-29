@@ -51,6 +51,10 @@ class Filme{
     adicionaReview(review){
         this.listaReviews.push(review);
     }
+
+    removeReview(idreview){
+        this.listaReviews = this.listaReviews.filter(r => r.getId() !== idreview);
+    }
     
 }
 

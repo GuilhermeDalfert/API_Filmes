@@ -58,7 +58,7 @@ function deletaFilme (req, res){
 
     filmes = filmes.filter(f => f !== filme);
 
-    return res.status(200).json("Filme deletado com sucesso.")
+    return res.status(200).json("Filme deletado com sucesso.");
 }
 
 function listaFilmes (req, res){
