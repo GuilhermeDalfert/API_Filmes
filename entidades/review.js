@@ -1,11 +1,9 @@
-const { contador } = require("./filme");
+const { gerarId } = require("./idGenerator");
 
 class Review{
-    static contador = 0;
 
     constructor(titulo, texto, idfilme){
-        Review.contador += 1;
-        this.id=Review.contador;
+        this.id=gerarId();
         this.titulo=titulo;
         this.texto=texto;
         this.idfilme=idfilme;

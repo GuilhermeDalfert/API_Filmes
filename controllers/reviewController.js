@@ -35,7 +35,7 @@ function criaReview (req, res){
     filme.adicionaReview(review);
     reviews.push(review);
 
-    return res.status(201).json(filme);
+    return res.status(201).json(review);
 }
 
 function atualizaReview (req, res){
@@ -49,10 +49,10 @@ function atualizaReview (req, res){
     if(titulo){review.setTitulo(titulo);}
     if(texto){review.setTexto(texto);}
     if(idfilme){
-        const filmeIni = getFilmeById(review.getIdFilme());
+        const filmeIni = controllerFilme.getFilmeById(review.getIdFilme());
         filmeIni.removeReview(review.getId());
         review.setIdFilme(idfilme);
-        const filmeFin = getFilmeById(review.getIdFilme());
+        const filmeFin = controllerFilme.getFilmeById(review.getIdFilme());
         filmeFin.adicionaReview(review);
     }
 
@@ -66,7 +66,7 @@ function deletaReview (req, res){
         return res.status(404).send('Review não encontrado');
     }
 
-    const filme = getFilmeById(review.getIdFilme())
+    const filme = controllerFilme.getFilmeById(review.getIdFilme())
     filme.removeReview(review.getId());
 
     reviews = reviews.filter(r => r !== review);
