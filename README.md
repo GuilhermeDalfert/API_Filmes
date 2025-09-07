@@ -1,7 +1,7 @@
 # 🎬 Movie API  
 
 API RESTful desenvolvida com **Node.js** e **Express.js**, que permite gerenciar filmes e reviews.  
-O projeto foi construído com foco em **boas práticas**, **organização de código** e entendimento dos fundamentos de **APIs REST**.  
+Os dados são armazenados em **arrays de objetos na memória**, demonstrando CRUD e manipulação de dados sem banco de dados.    
 
 ---
 
@@ -72,5 +72,16 @@ git clone https://github.com/seu-usuario/movie-api.git
 cd movie-api
 npm install
 npm start
+```
 
+---
+
+## ✅ Aprendizados com o Projeto
+
+- Estruturação de uma API RESTful seguindo boas práticas  
+- Uso correto dos métodos HTTP (GET, POST, PUT, DELETE)  
+- Implementação de status codes adequados  
+- Armazenamento de dados em arrays de objetos na memória  
+- Organização do código em controllers, routes e entidades  
+- Documentação clara e testes práticos usando Postman
 
