@@ -1,4 +1,4 @@
-# 🎬 Movie API  
+# 🎬 API_Filmes  
 
 API RESTful desenvolvida com **Node.js** e **Express.js**, que permite gerenciar filmes e reviews.  
 Os dados são armazenados em **arrays de objetos na memória**, demonstrando CRUD e manipulação de dados sem banco de dados.    
