@@ -55,6 +55,16 @@ O projeto foi construído com foco em **boas práticas**, **organização de có
 
 ---
 
+## ▶️ Como importar a coleção no Postman:
+
+1. Baixe o arquivo `API_Filmes.postman_collection.json`.
+2. Abra o Postman.
+3. Clique em "Import" no canto superior esquerdo.
+4. Selecione o arquivo baixado.
+5. Agora você terá todas as rotas prontas para teste.
+   
+---
+
 ## ▶️ Como Rodar  
 
 ```bash
@@ -62,3 +72,5 @@ git clone https://github.com/seu-usuario/movie-api.git
 cd movie-api
 npm install
 npm start
+
+
